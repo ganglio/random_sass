@@ -1,18 +1,10 @@
 # RandomSass
 
-TODO: Write a gem description
+Sass and Compass CSS random number library
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'random_sass'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Just run
 
     $ gem install random_sass
 
