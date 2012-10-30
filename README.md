@@ -4,9 +4,15 @@ Sass and Compass CSS random number library
 
 ## Installation
 
-Just run
+**This plugin requires
+Sass 3.2 and
+Compass 0.12**
 
-    $ gem install random_sass
+    gem install animation --pre
+
+    require 'animation'
+
+    @import "animation";
 
 ## Usage
 
