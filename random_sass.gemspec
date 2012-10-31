@@ -5,7 +5,7 @@ require 'random_sass/version'
 
 Gem::Specification.new do |s|
 # Release Specific Information
-  s.version = RandomSass::VERSION
+  s.version = RandomSass::VERSION+Time.new.strftime(".%Y%m%d%H%M")
 
   # Gem Details
   s.name = "random_sass"

@@ -26,10 +26,12 @@ module Sass::Script::Functions
 			assert_type p_mean, :Number
 			assert_type p_std, :Number
 
-			u = Random.rand(100000)/100000
-			v = Random.rand(100000)/100000
-			w = u*u + v*v
+			u = Random.rand(100000)/100000.0
+			v = Random.rand(100000)/100000.0
 
+			z = Math.sqrt(-2*Math.log(u)) * Math.cos(2*Math::PI*v)
+
+			Sass::Script::String.new("#{z}#{p_mean.unit_str}")
 		end
 
 		def assert_same_unit(value1, value2, name = nil)
@@ -38,7 +40,6 @@ module Sass::Script::Functions
 			err = "$#{name}: " + err if name
 			raise ArgumentError.new(err)
 		end
-
 	end
 
 	include RandomSass
