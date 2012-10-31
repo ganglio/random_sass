@@ -20,7 +20,7 @@ module Sass::Script::Functions
 
 			out_value = n_min + Random.rand(n_max-n_min)
 
-			Sass::Script::String.new("#{out_value}#{p_max.unit_str}")
+			Sass::Script::Number.new(out_value,p_max.numerator_units,p_max.denominator_units)
 		end
 
 		# Returns a random number belonging to the set N(p_mean,p_std)
@@ -35,7 +35,7 @@ module Sass::Script::Functions
 
 			out_value = p_std.value * z + p_mean.value
 
-			Sass::Script::String.new("#{out_value}#{p_mean.unit_str}")
+			Sass::Script::Number.new(out_value,p_mean.numerator_units,p_mean.denominator_units)
 		end
 
 		# A couple of handy assert for type validation.
