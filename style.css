@@ -1,0 +1,99 @@
+@import 'http://fonts.googleapis.com/css?family=Cabin';
+/* line 23, style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #505050;
+  background-image: url(furley_bg.png);
+}
+
+/* line 31, style.scss */
+header {
+  text-align: center;
+  font-size: 3em;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  margin: 30px 10px;
+  -webkit-border-radius: 0 30px 0 30px;
+  -moz-border-radius: 0 30px 0 30px;
+  -ms-border-radius: 0 30px 0 30px;
+  -o-border-radius: 0 30px 0 30px;
+  border-radius: 0 30px 0 30px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+/* line 39, style.scss */
+section {
+  padding: 0 3em;
+}
+
+/* line 43, style.scss */
+article {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  margin: 30px 10px;
+  -webkit-border-radius: 0 30px 0 30px;
+  -moz-border-radius: 0 30px 0 30px;
+  -ms-border-radius: 0 30px 0 30px;
+  -o-border-radius: 0 30px 0 30px;
+  border-radius: 0 30px 0 30px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 48, style.scss */
+article h1 {
+  font-size: 1.5em;
+  padding-left: 0;
+  margin: 0;
+  -webkit-transition: padding-left 0.25s;
+  -moz-transition: padding-left 0.25s;
+  -o-transition: padding-left 0.25s;
+  transition: padding-left 0.25s;
+}
+/* line 53, style.scss */
+article h1:hover {
+  padding-left: 20px;
+}
+/* line 57, style.scss */
+article p {
+  width: 75%;
+  float: left;
+}
+/* line 60, style.scss */
+article p em {
+  color: #838383;
+}
+/* line 64, style.scss */
+article .test {
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+/* line 69, style.scss */
+article .test.uniform {
+  background-color: #94f3e0;
+  position: relative;
+}
+/* line 76, style.scss */
+article .test.uniform:before {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  content: "#94f3e0";
+  line-height: 50px;
+  text-align: center;
+  color: #030303;
+}
